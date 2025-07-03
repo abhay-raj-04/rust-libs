@@ -1,0 +1,20 @@
+[package]
+name = "cargo-forge"
+version = "0.0.1"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A powerful scaffolding tool for Rust projects"
+readme = "README.md"
+repository = "https://github.com/your-username/cargo-forge"
+license = "MIT"
+keywords = ["scaffolding", "template", "generator", "cli", "cargo"]
+categories = ["command-line-utilities", "development-tools"]
+
+[[bin]]
+name = "cargo-forge"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+include_dir = "0.7"
